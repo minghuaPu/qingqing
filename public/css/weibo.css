@@ -1,0 +1,30 @@
+body{background-color: #EDEDEF}
+*{margin: 0;padding: 0;list-style: none;}
+
+.head_photo{width: 64px}
+header,header a{color: #fff !important}
+header .modal{color: #333 !important}
+.menu_box{margin:0;}
+.hide_box{display: none;}
+/*以col-lg开头的*/
+.menu_box [class^="col-lg"]{border: 1px solid #eee; font-size: 20px; color: #f58384; text-align: center; padding: 20px 0; }
+.menu_box [class^="col-lg"] a{color: #f58384;}
+.mt_20{margin-top: 20px;}
+/*列表的样式*/
+.list_box .list_content{min-height: 260px;
+    overflow: hidden;
+}
+.dropdown-menu a{color: #666 !important}
+.commont_form_box{padding: 10px 0;}
+.mananga_box{text-align: right;padding-bottom: 10px;}
+.list_box {overflow: hidden;}
+.list_box li{margin-bottom: 20px;}
+.list_box li .content_box{background-color: #fff; box-shadow: 1px 1px 6px #ccc; min-height: 280px;padding-top: 15px; }
+
+.sanjiao_box{width: 0; height: 0; border-top: none; border-bottom: 23px solid transparent; border-right: 30px solid white; border-left: none; margin-top: -15px; margin-left: -35px; }
+
+.preview_box img{width: 88px}
+
+.head_show_box{position: absolute;border: 1px solid #000;width: 100px;height: 100px;top: 0;left: 0;}
+
+.head_show_box img{width: 100%}

@@ -1,0 +1,35 @@
+<li class="clearfix animated slideInDown">
+	<div class="col-lg-2">
+		<img src="{$user_info.head_photo|default:'/20160728/lesson_5/weibo_2_1/public/head_photo.jpg'}" alt=""   class="head_photo"></div>
+
+	<div class="col-lg-10 content_box">
+		<div class="sanjiao_box"></div>
+
+		<div class="list_content">
+			{if $item.type == 'music'}
+			<img src="{$item.pic}" style="width:88px" alt="">
+			<audio src="{$item.music}" controls></audio>
+			{elseif $item.type == 'pic_text'}
+			<div class="col-lg-6">
+				<img  style="width:100%" src="{$item.pic}" ></div>
+			<div class="col-lg-6">{$item.weibo_content}</div>
+			{else}	
+					{$item.weibo_content} 
+			{/if}
+		</div>
+		<div class="mananga_box">
+			<a  class="commont_btn" data-num="0" data-id="{$item.id}">
+				评论(
+				<span class="num_val_box">0</span>
+				)
+			</a>
+			<a href="#modal_box" data-toggle="modal">删除</a>
+		</div>
+
+		<div class="commont_form_box hide_box">
+			<ul class="commont_list"></ul>
+			<textarea name=""  class="commont_texarea"  style="width:100%"></textarea>
+			<input type="button" class="btn btn-default send_commont" data-id="{$item.id}" value="发布评论"></div>
+
+	</div>
+</li>

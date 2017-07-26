@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="public/js/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+	微博列表
+	<form action="index.php?action=save" method="post">
+
+		<textarea name="weibo_content" id="baiduEditor"  style="height:280px"></textarea>
+		<!-- 配置文件 -->
+		<input type="submit" value="发布"></form>
+	<script type="text/javascript" src="public/libarary/ueditor/ueditor.config.js"></script>
+
+	<script type="text/javascript" src="public/libarary/ueditor/ueditor.all.min.js"></script>
+
+	<!-- 实例化编辑器 -->
+	<script type="text/javascript">UE.getEditor("baiduEditor")</script>
+
+</body>
+</html>
